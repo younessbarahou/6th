@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --red: hsl(4, 100%, 67%);
+    --orange: hsl(32, 82%, 50%);
+    --darkgrey : hsl(234, 29%, 20%);
+    --charcoalgrey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--darkgrey);
+    font-family: "Roboto", sans-serif;
+}
+#all{
+    color: var(--charcoalgrey);
+    border: 0px solid black;
+    display: flex;
+    width: 375px;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white);
+}
+.top{
+    order: 0;
+    width: 100%;
+}
+.part2{
+    padding-left: 24px;
+    max-width: 18.75rem;
+}
+ul{
+    list-style-image: url('../assets/images/icon-list.svg');
+}
+li{
+    margin-left: -1.25rem;
+}
+li > p{
+    padding-left: 10px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.label{
+    font-size: 12px;
+    margin-bottom: 4px;
+    color: var(--darkgrey);
+    font-weight: 700;
+    display: block;
+    width: 100px;
+}
+.input{
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 15px;
+}
+input::placeholder{
+    padding-left: 5px;
+    font-size:16px;
+    font-weight: 700;
+}
+.input:focus{
+    background-color: var(--white);
+    outline-color: var(--grey);
+}
+.btn{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--darkgrey);
+    color: var(--white);
+    border: 0px solid;
+    border-radius: 5px;
+}
+.btn:hover{
+background-color: var(--red);
+cursor:pointer;
+transition: 400ms;
+}
+@media all and (min-width: 375px){
+    .allsubmitted-mobile{
+        display: none;
+    }
+    .allsubmitted-desktop{
+        display:block;
+    }
+#all{
+    top: 50%;
+    position: relative;
+    flex-direction: row;
+    width:950px;
+    height: 600px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+.top{
+    padding: 20px 20px 20px 0px;
+    margin-left: 200px;
+    order: 1;
+    content: url('../assets/images/sign-up-desktop.svg');
+}
+.part2{
+    padding-top: 50px;
+    margin-left: 30px;
+}
+ .middle > p {
+    width:450px;
+}
+.h1{
+    width: 450px;
+    text-align: start;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+#form{
+    padding-top: 20px;
+    width: 400px;
+}
+.join{
+    padding-bottom: 8px;
+}
+}
+@media all and (max-width:375px){
+    .allsubmitted-desktop{
+        display: none;
+    }
+    .allsubmitted-mobile{
+        display: block;
+    }
+}
+.attribution{
+    color: var(--white);
+    text-align: center;
+}
+.attribution > a{
+    text-decoration: none;
+    color: var(--red);
+}
+.attribution>a:hover{
+color: var(--orange);
+transition: 1s;
+}
+.allsubmitted-mobile{
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+    width: 100%;
+    background-color: var(--white);
+    padding: 80px 0px 5px 20px;
+    border-radius: 5px;
+    height: 929px;
+}
+.thanks-mobile,.confirmation-mobile,.dismiss-mobile{
+    width: 90%;
+}
+.thanks-mobile{
+    color: var(--darkgrey);
+}
+.confirmation-mobile{
+    color: var(--charcoalgrey)
+}
+.dismiss-mobile{
+    margin-top: 100px;;
+    margin-bottom: 30px;
+    padding: 15px 0px;
+    background-color: var(--darkgrey);
+    border: 0px solid;
+    border-radius: 5px;
+    color: var(--white);
+}
+.dismiss-mobile:hover{
+    background-color: var(--red);
+    transition: 400ms;
+    cursor: pointer;
+}
+.allsubmitted-desktop{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border: 1px solid;
+    background-color: var(--white);
+    height: 380px;
+    width: 340px;
+    border-radius: 25px;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+.thanks-desktop,.confirmation-desktop,.dismiss-desktop{
+    width: 80%;
+}
+.thanks-desktop{
+    color: var(--darkgrey);
+}
+.confirmation-desktop{
+    color: var(--charcoalgrey)
+}
+.dismiss-desktop{
+    margin-top: 20px;
+    padding: 15px 0px;
+    background-color: var(--darkgrey);
+    border: 0px solid;
+    border-radius: 5px;
+    color: var(--white);
+}
+.dismiss-desktop:hover{
+    background-color: var(--red);
+    transition: 400ms;
+    cursor: pointer;
+}
+.errordiv{
+    display: flex;
+    justify-content: space-between;
+}
+.error{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--red);
+    display: none;
+}

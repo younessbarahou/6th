@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta type="description" content="submit form ">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <div class="allsubmitted-mobile">
+<img src="../assets/images/icon-success.svg">
+  <h1 class="thanks-mobile"> Thanks for subscribing! </h1>
+  <p class="confirmation-mobile">A confirmation email has been sent to <span class="changedmail"><strong>ash@loremcompany.com</strong></span>. 
+  Please open it and click the button inside to confirm your subscription.
+</p>
+<a href="index.html"><button class="dismiss-mobile">Dismiss message</button></a>
+</div>
+<div class="allsubmitted-desktop">
+    <img src="../assets/images/icon-success.svg">
+      <h1 class="thanks-desktop"> Thanks for subscribing! </h1>
+      <p class="confirmation-desktop">A confirmation email has been sent to <strong><span id="newmail">ash@loremcompany.com</span></strong> .
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <a href="index.html"><button class="dismiss-desktop">Dismiss message</button></a>
     
+</div>
+<script>
+    var email = sessionStorage.getItem("email");
+    newmail.innerText = email;
+</script>
 </body>
 </html>

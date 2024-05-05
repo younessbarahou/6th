@@ -2,45 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta type="description" content="submit form ">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+<link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body>
-
-
-  <h1>Stay updated!</h1>
-
-  <p>Join 60,000+ product managers receiving monthly updates on:</p>
+<div id="all">
+ <div class="top">
+  <img src="../assets/images/sign-up-mobile.svg" alt="mobile version">
+</div>
+<div class="part2">
+<div class="middle">
+  <h1 class="h1">Stay updated!</h1>
+  <p class="join">Join 60,000+ product managers receiving monthly updates on:</p>
  <ul>
- <li> Product discovery and building what matters</li>
-  <li>Measuring to ensure updates are a success</li>
-  <li>And much more!</li>
+ <li> <p>Product discovery and building what matters</p></li>
+  <li><p>Measuring to ensure updates are a success</p></li>
+  <li><p>And much more!</p></li>
 </ul>
-<form action="">
-  <label>Email address</label>
-  <input type="text" placeholder="email@company.com">
-
-  <button>Subscribe to monthly newsletter</button>
-</form>
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
+</div>
+<div id = "form" >
+  <div class="errordiv">
+  <label class="label">Email address </label> 
+  <span class="error">Valid Email Required</span>
+</div>
+  <input  oninput="reset()" autocomplete="on" id="input" class="input" type="text" placeholder="email@company.com">
+  <button oninput="check()" onclick="check()" class ="btn">Subscribe to monthly newsletter</button>
+</div>
+</div>
+</div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Youness Barahou</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
